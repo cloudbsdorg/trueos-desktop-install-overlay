@@ -65,7 +65,7 @@ setup_video() {
   busid=`pciconf -lv vgapci0 | grep vgapci0 | cut -d : -f 2-4`
 
   #Now copy over the xorg.conf template and replace the driver/busid in it
-  template="/root/plasma-xorg.conf"
+  template="/root/desktop-xorg.conf"
   cp -f "${template}" "${FSMNT}/etc/X11/xorg.conf"
   sed -i '' "s|%%BUSID%%|${busid}|g" "${FSMNT}/etc/X11/xorg.conf"
   sed -i '' "s|%%DRIVER%%|${viddriver}|g" "${FSMNT}/etc/X11/xorg.conf"
