@@ -1,2 +1,2 @@
-# trueos-plasma-overlay
-TrueOS Plasma Version - Install Overlay Directory
+# trueos-desktop-install-overlay
+TrueOS Desktop Version (Generic) - Install Overlay Directory
